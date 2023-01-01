@@ -45,7 +45,7 @@ const start = async () => {
   const httpServer = http.createServer(router);
   const PORT: any = process.env.PORT ?? 6060;
   httpServer.listen(PORT, async () => {
-    console.log(`The server is running on port ${PORT}`);
+    console.log(`The server is running on port ${PORT} and ready to use`);
     const client = new KafkaClient();
     await client.consume("learning");
   });
