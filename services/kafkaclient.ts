@@ -94,6 +94,9 @@ export class KafkaClient {
             key: message.key?.toString(),
             value: message.value?.toString(),
             headers: message.headers,
+            offset: message.offset,
+            partition,
+            topic,
           });
         },
       });
