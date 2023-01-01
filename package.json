@@ -16,7 +16,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.ts",
+    "start": "nodemon index.ts",
     "build": "rm -rf build/ && prettier --write / && tsc"
   },
   "author": "",
